@@ -24,42 +24,14 @@
             <ul class="nav nav-pills flex-column mb-auto">
                 <li class="nav-item">
                     <a href="#" class="nav-link active" aria-current="page">
-                        <svg class="bi pe-none me-2" width="16" height="16">
-                            <use xlink:href="#home"></use>
-                        </svg>
+                        <i class="bi-speedometer2 bi pe-none me-2"></i>
                         Home
                     </a>
                 </li>
                 <li>
                     <a href="#" class="nav-link text-white">
-                        <svg class="bi pe-none me-2" width="16" height="16">
-                            <use xlink:href="#speedometer2"></use>
-                        </svg>
-                        Dashboard
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link text-white">
-                        <svg class="bi pe-none me-2" width="16" height="16">
-                            <use xlink:href="#table"></use>
-                        </svg>
-                        Orders
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link text-white">
-                        <svg class="bi pe-none me-2" width="16" height="16">
-                            <use xlink:href="#grid"></use>
-                        </svg>
-                        Products
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link text-white">
-                        <svg class="bi pe-none me-2" width="16" height="16">
-                            <use xlink:href="#people-circle"></use>
-                        </svg>
-                        Customers
+                        <i class="bi-table bi pe-none me-2"></i>
+                        Articles
                     </a>
                 </li>
             </ul>
@@ -69,7 +41,7 @@
                     <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
                     <strong>mdo</strong>
                 </a>
-                <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                <ul class="dropdown-menu dropdown-menu-dark text-small shadow" style="">
                     <li><a class="dropdown-item" href="#">New project...</a></li>
                     <li><a class="dropdown-item" href="#">Settings</a></li>
                     <li><a class="dropdown-item" href="#">Profile</a></li>

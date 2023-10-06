@@ -1,17 +1,23 @@
 <?php
 
-function getArticles(PDO $pdo, int $limit = null): array
+function getArticles(PDO $pdo, int $limit = null, int $page = null): array
 {
     $sql = "SELECT * FROM articles ORDER BY id DESC";
-    if ($limit) {
+    if ($limit && !$page) {
         $sql .= " LIMIT :limit";
     }
-
+    if ($page) {
+        $sql .= " LIMIT :offset, :limit";
+    }
 
     $query = $pdo->prepare($sql);
 
     if ($limit) {
         $query->bindValue(":limit", $limit, PDO::PARAM_INT);
+    }
+    if ($page) {
+        $offset = ($page - 1) * $limit;
+        $query->bindValue(":offset", $offset, PDO::PARAM_INT);
     }
 
     $query->execute();
@@ -19,6 +25,20 @@ function getArticles(PDO $pdo, int $limit = null): array
 
     return $articles;
 }
+
+function getTotalArticle(PDO $pdo): int
+{
+    $sql = "SELECT COUNT(*) as total FROM articles;";
+
+    $query = $pdo->prepare($sql);
+
+    $query->execute();
+    $result = $query->fetch(PDO::FETCH_ASSOC);
+
+    return $result['total'];
+}
+
+
 function getArticleById(PDO $pdo, int $id): array|bool
 {
     $sql = "SELECT * FROM articles WHERE id = :id";
