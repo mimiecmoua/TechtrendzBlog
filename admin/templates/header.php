@@ -24,13 +24,13 @@
             <ul class="nav nav-pills flex-column mb-auto">
                 <li class="nav-item">
                     <a href="#" class="nav-link active" aria-current="page">
-                        <i class="bi-speedometer2 bi pe-none me-2"></i>
+                        <i class="bi bi-house bi pe-none me-2"></i>
                         Home
                     </a>
                 </li>
                 <li>
                     <a href="#" class="nav-link text-white">
-                        <i class="bi-table bi pe-none me-2"></i>
+                        <i class="bi bi-book-half pe-none me-2"></i>
                         Articles
                     </a>
                 </li>
