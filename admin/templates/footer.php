@@ -5,7 +5,7 @@
 </div>
 
 <footer class="py-3 my-4">
-    <p class="text-center">Admin TechTrendz</p>
+    <p class="text-center">@ 2023 TechTrendz - ADMIN</p>
 </footer>
 
 
